@@ -21,18 +21,32 @@ $(".getwea").click(function(){
 			'lon':lon
 		},
 	dataType:"json",	
-	success : function (text) {
-			alert(text);
-	},
 	async : true,
-	success: processJson
-});
+	success: function (data) { 
+		$(".jsonshow").append("<br/>"+data.name+"<br/><hr/>");
+		$.each(data.wind,function(key,value){
+            $(".jsonshow").append(key+"----"+value+"<br/><hr/>");
+        });
+         //解析数组
+        $.each(data.main, function(key,value) {
+            $(".jsonshow").append(key+"----"+value+"<br/><hr/>");
+        });
+		 //解析数组
+        $.each(data.weather, function(i, item) {
+            $(".jsonshow").append(
+                    "<div>" + item.id + "</div>" + 
+                    "<div>" + item.main    + "</div>" +
+                    "<div>" + item.description + "</div><hr/>");
+        });
+	  }//success end
+	  
+	});
 });
 
-function processJson(){
-	
-  
-}
+
+
+
+
 function getLatLon(){
   var startPos;
   var geoOptions = {
@@ -64,6 +78,8 @@ function processXML(xml) {
     }
   });
  }
+ 
+ 
 
 getLatLon();
 
