@@ -1,0 +1,48 @@
+{"coord":
+	{
+		"lon":122.05,"lat":37.19
+	},
+"weather":
+	[{
+		"id":802,
+		"main":"Clouds",
+		"description":"scattered clouds",
+		"icon":"03n"
+		}],
+"base":"cmc stations",
+"main":
+	{"temp":277.246,
+	"pressure":1029.3,
+	"humidity":84,
+	"temp_min":277.246,
+	"temp_max":277.246,
+	"sea_level":1034.15,
+	"grnd_level":1029.3
+	},
+"wind":
+	{
+	"speed":3.76,
+	"deg":172.501
+	},
+"clouds":
+	{
+	"all":36
+	},
+"dt":1457260364,
+"sys":{
+	"message":0.0031,
+	"country":"CN",
+	"sunrise":1457216119,
+	"sunset":1457257864
+	},
+"id":1791536,
+"name":"Wendeng",
+"cod":200
+	
+}
+	
+	
+	
+	
+	
+	

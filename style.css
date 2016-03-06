@@ -1,0 +1,20 @@
+#container{
+  height:1000px;
+  background-color:#000000;
+  color:#ffffff;
+  text-align:center;
+}
+#startLat{
+  height:30px;
+  border:1px solid #808080;
+  width:200px;
+  margin:0 auto;
+  
+}
+#startLon{
+  height:30px;
+  border:1px solid #808080;
+  width:200px;
+  margin:0 auto;
+  
+}
