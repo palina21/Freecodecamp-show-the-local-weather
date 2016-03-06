@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>GoggleMapAPI</title>    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+   
+  </head>
+
+  <body>
+
+    <script></script>
+<div id="container">
+  <h1>Postcode Finder</h1>
+  <button class="find btn btn-info">Find My Postcode</button>
+  <button class="getwea btn btn-info">Get Weather</button>
+  <div id ="result"></div>
+  <div>lat:<div id ="startLat"></div></div>
+  <div>lon:<div id ="startLon"></div></div>
+</div>
+
+
+
+
+<script>
+var callbackFunction = function(data) {
+    var units = data.query.results.channel.units;
+   // alert(units.temperature);
+};
+</script>
+
+<script src="https://query.yahooapis.com/v1/public/yql?q=select units from weather.forecast where woeid in (select woeid from geo.places(1) where text='chicago, il')&format=json&callback=callbackFunction"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
