@@ -1,28 +1,40 @@
+body p h1 h4{
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 #container{
-  height:1000px;
+  background-color:#99CCFF;
+  padding:100px;
+  color:#FFFFFF;
+}
+
+
+#div_weather{
   background-color:#000000;
-  color:#ffffff;
+  width:360px;
+  margin:0 auto;
+  padding-right:20px;
+  padding-left:20px;
+  padding-bottom:20px;
+  margin-bottom:100px;
+  }
+.wea_icon{
+  margin-top:20px;
+  text-align:center;
+  font-size:85px;
+  }
+
+.temp{
+  font-size:36px;
+}
+.tempdiv{
+  text-align:center;
+  font-size:24x;
+}
+.location{
   text-align:center;
 }
-#startLat{
-  height:30px;
-  border:1px solid #808080;
-  width:200px;
-  margin:0 auto;
-  
-}
-#startLon{
-  height:30px;
-  border:1px solid #808080;
-  width:200px;
-  margin:0 auto;
-  
-}
-.jsonshow{
-	border:1px solid #808080;
-	width:1000px;
-	margin:0 auto;
-	height:800px;
-	margin-top:10px;
+.list-desc{
+  color:#336699;
+ }
 
-}
+
