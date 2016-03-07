@@ -1,27 +1,59 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>GoggleMapAPI</title>    
-    
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<html>
 
-        <link rel="stylesheet" href="css/style.css">
-   
-  </head>
+	<head>
+		<meta charset="UTF-8">
+		<title>Show Local Weather Final</title>
 
-  <body>
+		<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+		<link rel='stylesheet prefetch' href='https://erikflowers.github.io/weather-icons/css/weather-icons.css'>
+		<link rel="stylesheet" href="style.css">
 
-<div id="container">
-  <h1>WeatherAPITest</h1>
-  <button class="find btn btn-info">Find Postcode</button>
-  <button class="getwea btn btn-info">Get Weather</button>
-  <div id ="result"></div>
-  <div>lat:<div id ="startLat"></div></div>
-  <div>lon:<div id ="startLon"></div></div>
-  <div class="jsonshow">show json data</div>
-</div>
-  
-  </body>
-  <script src="js/index.js"></script>
+	</head>
+
+	<body>
+
+		<div id="container">
+			<div id="div_weather" class="panel">
+				<div class="wea_icon">
+					<i id="wi-icon" class="wi wi-cloudy"></i>
+				</div>
+				<div class="row">
+					<div class=" tempdiv">
+						<h4 class="temp">5 <span class="temp_type">°C</span></h4>
+						<p class="weather">Sunnyg</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="location">
+						<h4 class="city">Regensburg</h4>
+						<p class="daytime">03 Marz,Freitag</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-5">
+					<h4>Functions:</h4>
+					<ul class="list-group list-desc">
+						<li class="list-group-item">1.Get time and date</li>
+						<li class="list-group-item">2.Get current coordinates</li>
+						<li class="list-group-item">3.Get weather data(json file) and process</li>
+					</ul>
+				</div>
+				<div class="col-sm-7">
+					<h4>
+        See more at Github or youtube:not finished yet</h4>
+					<ul class="list-group list-desc">
+						<li class="list-group-item">youtubelink</li>
+						<li class="list-group-item"><i></i>Githublink</li>
+						<li class="list-group-item">Linkedin</li>
+					</ul>
+				</div>
+				<div>
+				</div>
+				<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+				<script src="weather.js"></script>
+
+	</body>
+
 </html>
